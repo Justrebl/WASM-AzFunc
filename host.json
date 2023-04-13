@@ -22,6 +22,6 @@
         "127.0.0.1:%FUNCTIONS_CUSTOMHANDLER_PORT%"
       ]
     },
-		"enableForwardingHttpRequest":true
+    "enableForwardingHttpRequest": true
   }
 }
