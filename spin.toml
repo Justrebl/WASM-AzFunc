@@ -7,19 +7,14 @@ version = "0.1.0"
 
 [[component]]
 id = "rust-api01"
-source = "rust_api01.wasm"
+source = { url = "https://github.com/Justrebl/rust-WASM-api01/releases/download/v0.1.0/rust_api01.wasm", digest = "sha256:b6c41fa4d5b8a0035bbd3474bb5f9c62f282f10496065db5b8c4ac181f9e0ae0"}
 allowed_http_hosts = []
 [component.trigger]
 route = "/FooBar"
-[component.build]
-command = "cargo build --target wasm32-wasi --release"
 
 [[component]]
 id = "echo"
-source = {url = "https://echo.wasm"}
+source = { url = "https://github.com/Justrebl/rust-WASM-api01/releases/download/v0.1.0/echo.wasm", digest="sha256:3c0a00c94088c1aaf40e169e6d393e9c8593942c812bf2f5eb84357ad1997720"}
 allowed_http_hosts = []
 [component.trigger]
 route = "/echo"
-[component.build]
-command = "cargo build --target wasm32-wasi --release"
-workdir = "echo"
